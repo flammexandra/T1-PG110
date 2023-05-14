@@ -32,7 +32,7 @@
 *,
 *::before,
 *::after {
-box-sizing: border-box;
+  box-sizing: border-box;
 ;
 }
 
@@ -67,115 +67,119 @@ line-height: 1.15;
 -ms-text-size-adjust: 100%;
 -ms-overflow-style: scrollbar;
 -webkit-tap-highlight-color: transparent;
-
 background-repeat: no-repeat;
 background-size: cover;
 }
 
 body{
 position: relative;
-margin: 0;
-padding: 0;
 height: 100%;
-background-image: url('../../../Téléchargements/andra-c-taylor-jr-_L5MGd0w1FQ-unsplash\(1\).jpg');
+background-image: url('images/con_backround.jpg');
 background-repeat: no-repeat;
 background-size: cover;
-background-position: center;
 display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-overflow: scroll;
 }
-
-/* Button humburger */
-
-.navbar-toggler{
-background-color:white;
-width: fit-content;
-position: relative;
-justify-content: center;
-}
-
-/*
-.navbar-toggler-icon{
-filter: invert(100%);
--webkit-filter: invert(100%);
-}
-*/
 
 /* barre de navigation */
 
 .navbar {
-position:fixed;
-top: 0;
-left: 0;
-right: 0;
-max-height: 80px;
-background-color: red;
-position: fixed;
-justify-content: center;
-z-index: 1;
-background-color: #fef8dd;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-height: 80px;
+  background-color: #FFE4B5;
+  position: fixed;
+  justify-content: center;
+  z-index: 1;
+
 }
 
 /* Fromage box*/
 .navbar-brand p{
-font-family: 'Awake';
-font-size:35px;
-font-weight: bold;
-color: black;
+  font-family: 'Awake';
+  font-size:35px;
+  font-weight: bold;
+  color: black;
 }
 
 .navbar-brand p:hover{
-color: black;
-text-decoration: underline;
-text-decoration-color: black;
-
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
+  
 }
 
 .nav-link p{
-color: black;
-font-size: 16px;
+  color: black;
+  font-size: 16px;
 }
 
 .nav-link p:hover{
-text-decoration: underline;
-text-decoration-color: black;
-}
-
-.dropdown-menu{
-color:black;
-}
-
-.dropdown-toggle:hover {
-text-decoration: underline;
-}
-.dropdown-item:hover {
-background-color: lightgray;
+  text-decoration: underline;
+  text-decoration-color: black;
 }
 
 .nav-link i{
-color: black;
-font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 .nav-link i:hover{
-color: var(--yellow);
+  color: var(--yellow);
 }
 
 .navbar-link li a:hover {
-color: black;
-text-decoration: underline;
-text-decoration-color: white;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
+/* Menu dropdouwn */
 
-/* Section */
+.dropdown-menu{
+  color:black;
+}
+
+.dropdown-toggle:hover {
+  text-decoration: underline;
+}
+.dropdown-item:hover {
+  background-color: lightgray;
+}
+
+/* Navbar toggle */
+
+.navbar-toggler{
+  background-color:black;
+  width: fit-content;
+  position: relative;
+  justify-content: center;
+}
+  
+  
+.navbar-toggler-icon{
+  filter: sepia(50%) saturate(0.8) hue-rotate(20deg);
+  
+}
+  
+.navbar-toggler:hover {
+  background-color: grey;
+}
+  
+.navbar-toggler:hover .navbar-toggler-icon {
+  color: black;
+}
+  
+
+
 .container{
 margin-bottom: 2rem;
 }
 .tab-content{
-  background-color: #ececec;
+  background-color:  #FFE4B5;
 }
 

@@ -15,6 +15,29 @@
     --bg-color:#fff;
 }
 
+/* Différents types de polices téléchargés*/
+
+@font-face {
+    font-family: 'Blazed';
+    src: url(../fonts/Blazed-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+  font-family: 'Awake';
+  src: url(../fonts/Awake_the_Beauty.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lucian';
+  src: url(../fonts/Lucian_Schoenschrift.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Amarante';
+  src: url(../fonts/Amarante-Regular.ttf);
+  font-weight: normal;
+}
+
 img{
     width:100%;
 }
@@ -25,18 +48,17 @@ body{
 
 
 /* barre de navigation */
-
 .navbar {
     position:fixed;
     top: 0;
     left: 0;
     right: 0;
     max-height: 80px;
-    background-color: none;
+    background-color: #FFE4B5;
     position: fixed;
     justify-content: center;
     z-index: 1;
-    background-color: #fef8dd;
+  
   }
   
   /* Fromage box*/
@@ -64,17 +86,6 @@ body{
     text-decoration-color: black;
   }
   
-  .dropdown-menu{
-    color:black;
-  }
-  
-  .dropdown-toggle:hover {
-    text-decoration: underline;
-  }
-  .dropdown-item:hover {
-    background-color: lightgray;
-  }
-  
   .nav-link i{
     color: black;
     font-weight: bold;
@@ -90,8 +101,43 @@ body{
     text-decoration-color: white;
   }
   
+  /* Menu dropdouwn */
   
+  .dropdown-menu{
+    color:black;
+  }
+  
+  .dropdown-toggle:hover {
+    text-decoration: underline;
+  }
+  .dropdown-item:hover {
+    background-color: lightgray;
+  }
+  
+  /* Navbar toggle */
+  
+  .navbar-toggler{
+    background-color:black;
+    width: fit-content;
+    position: relative;
+    justify-content: center;
+    }
+    
+    
+  .navbar-toggler-icon{
+    filter: sepia(50%) saturate(0.8) hue-rotate(20deg);
+    
+  }
+    
+  .navbar-toggler:hover {
+    background-color: grey;
+  }
+    
+  .navbar-toggler:hover .navbar-toggler-icon {
+    color: black;
+  }
 
+  
 .container{
     max-width:1068;
     margin:auto;
@@ -107,28 +153,7 @@ section{
     font-weight: 400;
 }
 
-header{ 
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background: var(--bg-color);
-    box-shadow: 0 1px 4px hsl(0 4% 15% / 10% );
-    z-index:100px;
-    cursor: pointer;
-}
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-.logo{
-    font-size: 1.1rem;
-    color:var(--text-color);
-    font-weight: 400;
-
-}
+/* Panier */
 
 #card-icon{
     font-size:1.8rem;
@@ -153,6 +178,7 @@ header{
 .cart-title{
     text-align:center;
     font-size: 1.5rem;
+    font-family: 'Amarante';
     font-weight: 600;
     margin-top: 2rem;
 }
@@ -182,7 +208,7 @@ header{
     font-size: 0.80rem;
 }
 .cart-remove{
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     cursor: pointer;
 }
@@ -207,7 +233,7 @@ header{
 
 .total-title{
     font-size: 1rem;
-    font-weight: 600
+    font-weight: 600;
 }
 
 .total-price{
@@ -220,8 +246,8 @@ header{
     margin: 1.5rem auto 0 auto;
     padding: 12px 20px;
     border: none;
-    background:var(--main-color);
-    color: var(--bg-color);
+    background:wheat;
+    color: black;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -235,7 +261,7 @@ header{
     position: absolute;
     top:1rem;
     right: 0.8rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:var(--text-color);
     cursor: pointer;
 }
@@ -245,6 +271,7 @@ header{
     font-weight:600;
     text-align: center;
     margin-bottom: 1.5rem;
+    font-family: 'Amarante';
 }
 
 .shop{
@@ -257,7 +284,8 @@ header{
 .shop-content{
   
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 180px) );
+    justify-content: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto) );
     gap:1.5rem;
 
 }
@@ -281,8 +309,7 @@ header{
 .product-title{
     font-family: sans-serif;
     font-size: 1.1rem;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: bold;
     margin-bottom: 0.5rem;
 }
 .price{

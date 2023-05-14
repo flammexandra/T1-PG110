@@ -1,120 +1,96 @@
-
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-
-
-<head>
+  <head>
     
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SITE BY FLARMEXANDRA</title>
-
-    <!--Le lien importe le fichier CSS de Bootstrap,permettant de personnaliser la page web à l'aide des classes Bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fromage box</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
           rel="stylesheet" 
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
           crossorigin="anonymous">
-
-    <!--Le lien importe le fichier JavaScript de Popper.js Core, qui est une bibliothèque JavaScript permettant de positionner des éléments sur une page web -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-    <!--Le lien importe le fichier JavaScript optimisé de Bootstrap, qui contient le code JavaScript nécessaire pour activer les fonctionnalités de Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"> </script>
     
-    <!--Llien importe le fichier CSS de Font Awesome, qui permet d'utiliser les icônes de Font Awesome pour la création de la page web-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
-
-    <!--Utiliser les icônes de boostrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    
-    
-    <link href="../css/fromage.css" rel="stylesheet">
-
-    <!--Box Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
    
-</head>
-<body>
-    <header>
-        <!-- Ajouter la classe "navbar" -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- Ajouter la classe "container" -->
-            <div class="container">
-                <!-- Ajouter la classe "navbar-brand" et le logo -->
-                <a href="../index.html" class="navbar-brand">Fromage box</a>
-                
-                
-               
-                <!-- Ajouter la classe "collapse" et l'ID "navbarNav" -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- Ajouter la classe "navbar-nav" et les liens de navigation -->
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Qui sommes nous?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nos produits</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nos partenaires</a>
-                        </li>
-                    </ul>
-                </div>
-                <i class="bx bx-shopping-bag" id="cart-icon"></i>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-                <!-- Ajouter la classe "cart" -->
-                <div class="cart">
-                    <h2 class="card-title">Votre panier</h2>
-                    <div class="cart-content">
-                    </div>
-                    <!--Total-->
-                    <div class="total">
-                        <div class="total-title">Total</div>
-                        <div class="total-price">0$</div>
-                    </div>
-                    <!--Button :'acheter'-->
-                    <button type="button" class="btn btn-primary btn-buy">Acheter maintenant</button>
-                    <!--Cart Close -->
-                    <i class="fa fa-times" id="close-cart"></i>
-                </div>
+    <link href="../css/fromage.css" rel="stylesheet">
+    
+    
+  </head>
+  
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid d-felw align-items-center">
+              <a class="navbar-brand logo fw-bold mr-auto" href="../index.html" >
+                  <p style="color: black;">Fromage box</p>
+              </a>
+              <button class="navbar-toggler py-0" 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#navbarNav" 
+                      aria-controls="navbarNav" 
+                      aria-expanded="false" 
+                      aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end me-auto" id="navbarNav">
+                  <ul class="navbar-nav px-4 mc-auto mb-2 mb-lg-0">
+                      <li class="nav-item-active px-3">
+                          <a class="nav-link" href="../index.html"><p style="color: black;">Accueil</p></a>
+                      </li>
+                      <li class="nav-item-active px-3">
+                          <a class="nav-link" href="#"><p>Qui sommes nous?</p></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+                          Nos produits
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="../produits/fromages.html">Nos fromages</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="../produits/fromages1.html">Fromages à pâte fraîche</a></li>
+                          <li><a class="dropdown-item" href="../produits/fromages2.html">Fromages à pâte molle</a></li>
+                          <li><a class="dropdown-item" href="../produits/fromages3.html">Les fromages à pâte pressée</a></li>
+                          <li><a class="dropdown-item" href="../produits/fromages4.html">Les fromages à pâte persillée</a></li>
+                          <li><a class="dropdown-item" href="../produits/fromages5.html">Les fromages fondus</a></li>
+                          <li><a class="dropdown-item" href="../produits/fromages6.html">Les fromages au lait de chèvre</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="nav-item-active px-3">
+                        <a class="nav-link" href="#"><i class="fa fa-shopping-cart" id="cart-icon"></i></a>
+        
+                        <!-- Ajouter la classe "cart" -->
+                        <div class="cart">
+                            <h2 class="card-title">Votre panier</h2>
+                            <div class="cart-content">
+                            </div>
+                            <!--Total-->
+                            <div class="total">
+                                <div class="total-title">Total</div>
+                                <div class="total-price">0$</div>
+                            </div>
+                            <!--Button :'acheter'-->
+                            <button type="button" class="btn btn-primary btn-buy">Acheter maintenant</button>
+                            <!--Cart Close -->
+                            <i class="fa fa-times" id="close-cart"></i>
+                        </div>
+                      </li>
+
+                      <li class="nav-item-active px-3">
+                        <a class="nav-link" href="connexion.html"><i class="fa fa-user"></i></a>
+                      </li>
+                  </ul>
+              </div>
             </div>
         </nav>
-    </header> 
+      </div>
 
-
-  <!-- <header>
-        <div class="nav container">
-            <a href="../index.html" class="logo">Fromage box</a>
-            
-            <i class="bx bx-shopping-bag" id="cart-icon"></i>
-           
-            <div class="cart">
-                <h2 class="card-title">Votre panier</h2>
-                <div class="cart-content">
-                  
-                </div>
-                <!--Total
-                <div class="total">
-                    <div class="total-title">Total</div>
-                    <div class="total-price">0$</div>
-                </div>
-                <!--Button :'acheter'
-                <button type="button" class="btn-buy">Acheter maintenant</button>
-                <!--Cart Close 
-                <i class="fa fa-times" id="close-cart"></i>
-
-
-            </div>
-
-        </div>
-    </header> -->  
-   
     <section class="shop container">
         <h2 class="section-title">Fromages à pâte fraîche</h2>
         <div class="shop-content">
@@ -145,20 +121,18 @@
     
 
 
-    <script src="./main.js"></script>
+    <script src="../js/main_produits.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
     <script type="application/javascript">
         function openProduct(n){
             document.location.href = "fromages"+n+".html"
         }
-        </script>
-</body>
+    </script>
 
-             
-    
+</body> 
 </html>
 
 

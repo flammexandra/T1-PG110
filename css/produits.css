@@ -58,6 +58,7 @@
   font-weight: normal;
 }
 
+
 /* barre de navigation */
 
 .navbar {
@@ -66,9 +67,11 @@
   left: 0;
   right: 0;
   max-height: 80px;
+  background-color: #FFE4B5;
+  position: fixed;
   justify-content: center;
   z-index: 1;
-  background-color: #fef8dd;
+
 }
 
 /* Fromage box*/
@@ -96,17 +99,6 @@
   text-decoration-color: black;
 }
 
-.dropdown-menu{
-  color:black;
-}
-
-.dropdown-toggle:hover {
-  text-decoration: underline;
-}
-.dropdown-item:hover {
-  background-color: lightgray;
-}
-
 .nav-link i{
   color: black;
   font-weight: bold;
@@ -122,11 +114,54 @@
   text-decoration-color: white;
 }
 
+/* Menu dropdouwn */
+
+.dropdown-menu{
+  color:black;
+}
+
+.dropdown-toggle:hover {
+  text-decoration: underline;
+}
+.dropdown-item:hover {
+  background-color: lightgray;
+}
+
+/* Navbar toggle */
+
+.navbar-toggler{
+  background-color:black;
+  width: fit-content;
+  position: relative;
+  justify-content: center;
+  }
+  
+  
+.navbar-toggler-icon{
+  filter: sepia(50%) saturate(0.8) hue-rotate(20deg);
+  
+}
+  
+.navbar-toggler:hover {
+  background-color: grey;
+}
+  
+.navbar-toggler:hover .navbar-toggler-icon {
+  color: black;
+}
+  
+
+
+/* Cartes */
 
 .text-center {
   margin-top: 5rem;
   color: black;
   font-family: 'Awake';
+}
+
+.cartes{
+  margin-bottom: 2rem;
 }
 
 .card-title{
@@ -148,25 +183,28 @@
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-/* the footer */
+
+/* Le footer */
 
 footer {
   margin-bottom: 0px;
   width: 100%;
   bottom:0px;
-  background:none;
-  background-color: #fef8dd;
+  background-color: #FFE4B5;
 }
 
 h2{
-  font-size: 25px;
-  font-family: 'Lucian';
+  font-size: 20px;
 }
 
 h5{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: normal;
+  font-family: sans-serif;
 }
+
+
+
 
 
 

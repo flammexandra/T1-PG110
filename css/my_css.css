@@ -112,11 +112,11 @@ body{
   left: 0;
   right: 0;
   max-height: 80px;
-  background-color: none;
+  background-color: #FFE4B5;
   position: fixed;
   justify-content: center;
   z-index: 1;
-  background-color: #fef8dd;
+ 
 }
 
 /* Fromage box*/
@@ -170,6 +170,9 @@ body{
   text-decoration-color: white;
 }
 
+.fa{
+  color:black;
+}
 
 /* Section */
 .container{
@@ -179,20 +182,19 @@ body{
 /* the footer */
 
 footer {
+  width:100%;
   margin-bottom: 0px;
-  width: 100%;
   bottom:0px;
-  background:none;
-  background-color: #fef8dd;
+  right: 0cm;
+  background-color: #FFE4B5;
 }
 
 h2{
-  font-size: 25px;
-  font-family: 'Lucian';
+  font-size: 20px;
 }
 
 h5{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: normal;
 }
 

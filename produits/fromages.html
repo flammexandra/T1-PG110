@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nos fromages</title>
+    
+    <!--Liens permettant l'utilisation de boostrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!--Impirtation fichier css-->
+    <link href="../css/produits.css" rel="stylesheet">
+    
+    
+  </head>
+  
+<body>
+    
+    <div class="container">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid d-felw align-items-center">
+            <a class="navbar-brand logo fw-bold mr-auto" href="../index.html" >
+                <p style="color: black;">Fromage box</p>
+            </a>
+            <button class="navbar-toggler py-0" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end me-auto" id="navbarNav">
+                <ul class="navbar-nav px-4 mc-auto mb-2 mb-lg-0">
+                    <li class="nav-item-active px-3">
+                        <a class="nav-link" href="../index.html"><p style="color: black;">Accueil</p></a>
+                    </li>
+                    <li class="nav-item-active px-3">
+                        <a class="nav-link" href="#"><p>Qui sommes nous?</p></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
+                        Nos produits
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../produits/fromages.html">Nos fromages</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../produits/fromages1.html">Fromages à pâte fraîche</a></li>
+                        <li><a class="dropdown-item" href="../produits/fromages2.html">Fromages à pâte molle</a></li>
+                        <li><a class="dropdown-item" href="../produits/fromages1.html">Les fromages à pâte pressée</a></li>
+                        <li><a class="dropdown-item" href="../produits/fromages2.html">Les fromages à pâte persillée</a></li>
+                        <li><a class="dropdown-item" href="../produits/fromages1.html">Les fromages fondus</a></li>
+                        <li><a class="dropdown-item" href="../produits/fromages2.html">Les fromages au lait de chèvre</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item-active px-3">
+                      <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="nav-item-active px-3">
+                      <a class="nav-link" href="../connexion.html"><i class="fa fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+
+    <div class="container cartes">
+      <h1 class="justify-content text-center py-4">Nos fromages</h1>
+      <div class="row row-cols-1 row-cols-md-2 g-4 pt-2">
+        <div class="col">
+          <div class="card" onclick="openProduct(1)">
+              <img src="img_produits/p_f.jpg" class="card-img-top" alt="pate_fraiche">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Fromages à pâte fraîche</h5>
+                <p class="card-text">Ces fromages se consomment rapidement après leur fabrication.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" onclick="openProduct(2)">
+            <img src="img_produits/molle.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Fromages à pâte molle</h5>
+              <p class="card-text">Les fromages à pâtes molles ont une texture onctueuse, fondante, crémeuse.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" onclick="openProduct(3)">
+            <img src="img_produits/pressee.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Les fromages à pâte pressée</h5>
+              <p class="card-text">Les pâtes pressées sont à l’origine des fromages d’alpages, fabriqués en montagne.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" onclick="openProduct(4)">
+            <img src="img_produits/persillee.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Les fromages à pâte persillée </h5>
+              <p class="card-text">Ils développent des points bleuâtres ou verdâtres dans la pâte.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" onclick="openProduct(5)">
+            <img src="img_produits/fondu.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Les fromages fondus</h5>
+              <p class="card-text">Ce type de fromages est obtenu par la fonte de fromages.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" onclick="openProduct(6)" >
+            <img src="img_produits/chevre.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Les fromages au lait de chèvre</h5>
+              <p class="card-text">Les fromages de chèvres ont des textures et des goûts bien différents. </p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <footer>
+      <div class="container">
+         <div class="row">
+               <div class="col-3 col-md-3 offset-md-1 gy-4">
+                   <h2 class="fw-bold">À propos</2>
+                   <h5>Votre entreprise de vente en ligne de fromage vous offre une sélection de produits frais et authentiques provenant des meilleurs producteurs locaux et internationaux.</h5>
+               </div>
+               <div class="col-3 col-md-3 offset-md-1 gy-4 ">
+                   <h2 class="contact fw-bold">Contactez-nous</h2>
+                   <h5><strong><i class="fa fa-phone"></i></strong> : +33 6 13 08 16 96</h5>
+                   <h5><strong><i class="fa fa-envelope"></i></strong> : qgflamme@gmail.com</h5>
+                   <h5>QG FLAMME, 33400 Talence</h5>
+               </div>
+               
+               <div class="col-3 col-md-3 offset-md-1 gy-4">
+                   <h2 class="fw-bold">Nous suivre</h2>
+                   <ul class="social-icons">
+                       <li class="list-inline-item">
+                           <a href="https://instagram.com/britney_fan_account?igshid=YzQ5NzA2ZmU=">
+                               <i class="fa fa-instagram"></i>
+                           </a>
+                       </li>
+                       <li class="list-inline-item px-2">
+                           <a href="https://www.facebook.com/profile.php?id=100089678590175">
+                               <i class="fa fa-facebook"></i>
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+      </div>  
+     
+      <li><hr class="divider "></li>
+ 
+      <div class="row justify-content-center text-center">
+          <div class="col-6 col-md-6">
+              <h5> &copy; 2023 <strong> Fromage Box.</strong>Tous droits réservés.</h5>
+          </div>
+      </div>
+    </footer>
+
+
+  <!--Link JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+          crossorigin="anonymous">
+  </script>
+
+
+  <!--Code java permettant de ovuvrir une nouvelle page en cliquant sur la carte-->
+  <script type="application/javascript">
+  function openProduct(n){
+    document.location.href = "fromages"+n+".html"
+  }
+  </script>
+
+</body>
+
+     
+</html>
+
+
+
+
+   
+

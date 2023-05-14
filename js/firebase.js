@@ -40,14 +40,32 @@ function login(email, password){
 }
 
 
-const form = document.getElementById('connection-form')
-console.log(form)
-form.addEventListener('submit', (e) => {
-  event.preventDefault(); // Empêche le formulaire de se soumettre
+const login_form = document.getElementById('connection-form')
 
-  const email = document.getElementsByName('loginName')[0].value;
-  const password = document.getElementsByName('loginPassword')[0].value;
+if(login_form != null){
+  console.log("Login form found !")
+  login_form.addEventListener('submit', (e) => {
+    event.preventDefault(); // Empêche le formulaire de se soumettre
 
-  login(email, password);
+    const email = document.getElementsByName('loginName')[0].value;
+    const password = document.getElementsByName('loginPassword')[0].value;
 
-})
+    login(email, password);
+
+  })
+}
+
+const register_form = document.getElementById('register-form')
+
+if(register_form != null){
+  console.log("Register form found !")
+  register_form.addEventListener('submit', (e) => {
+    event.preventDefault(); // Empêche le formulaire de se soumettre
+
+    const email = document.getElementsByName('loginName')[0].value;
+    const password = document.getElementsByName('loginPassword')[0].value;
+
+    register(email, password);
+
+  })
+}

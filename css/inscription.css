@@ -74,7 +74,7 @@ background-size: cover;
 body{
 position: relative;
 height: 100%;
-background-image: url('images/con_backround.jpg');
+background-image: url('../images/img_back.jpeg');
 background-repeat: no-repeat;
 background-size: cover;
 display:flex;

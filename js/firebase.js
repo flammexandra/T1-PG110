@@ -29,13 +29,17 @@ function register(email, password){
   createUserWithEmailAndPassword(auth, email, password).then((user)=>{
       console.log("User created !")
       console.log(user);
+      localStorage.setItem('user', JSON.stringify(user))
   });
+  document.location.href="user.html"
 }
 
 function login(email, password){
   signInWithEmailAndPassword(auth, email, password).then((user) => {
     console.log("User connected !")
     console.log(user);
+    localStorage.setItem('user', JSON.stringify(user))
+    document.location.href="user.html"
   });
 }
 
@@ -68,4 +72,13 @@ if(register_form != null){
     register(email, password);
 
   })
+}
+
+
+if(localStorage.getItem('user') != null){
+  console.log("User logged in !")
+  console.log(localStorage.getItem('user'))
+  //GO TO USER PAGE
+
+  document.location.href="user.html"
 }

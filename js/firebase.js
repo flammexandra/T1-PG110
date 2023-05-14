@@ -30,8 +30,9 @@ function register(email, password){
       console.log("User created !")
       console.log(user);
       localStorage.setItem('user', JSON.stringify(user))
+      document.location.href="user.html"
   });
-  document.location.href="user.html"
+
 }
 
 function login(email, password){
@@ -79,6 +80,5 @@ if(localStorage.getItem('user') != null){
   console.log("User logged in !")
   console.log(localStorage.getItem('user'))
   //GO TO USER PAGE
-
   document.location.href="user.html"
 }

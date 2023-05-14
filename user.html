@@ -27,19 +27,26 @@
         Display email
     </div>
 
+    <button onclick="logout()">Deconnexion</button>
+
 
 
 </body>
 
 <script>
     const user = localStorage.getItem('user')
-
+    console.log(user)
 
     if(user != null){
         obj = JSON.parse(user)
 
         document.getElementById('emailDisplay').innerHTML = obj.user.email
 
+    }
+
+    function logout(){
+        localStorage.removeItem('user')
+        window.location.href = "index.html"
     }
 </script>
 

@@ -175,7 +175,8 @@ body{
 }
 
 /* Section */
-.container{
+
+.cartes{
   margin-bottom: 2rem;
 }
 
@@ -184,7 +185,6 @@ body{
 footer {
   width:100%;
   margin-bottom: 0px;
-  bottom:0px;
   right: 0cm;
   background-color: #FFE4B5;
 }

@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  
+}
+@font-face {
+    font-family: 'Blazed';
+    src: url(../fonts/Blazed-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+  font-family: 'Awake';
+  src: url(../fonts/Awake_the_Beauty.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lucian';
+  src: url(../fonts/Lucian_Schoenschrift.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Amarante';
+  src: url(../fonts/Amarante-Regular.ttf);
+  font-weight: normal;
+}
+
+.tab-content{
+    background-color: wheat;
+}

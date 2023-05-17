@@ -1,11 +1,11 @@
-// Import the functions you need from the SDKs you need
+// Importer les fonctions dont on aura besoin à partir des SDK qu'on utilise
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
 
-// TODO: Add SDKs for Firebase products that you want to use
+// TODO: Ajouter les SDKs des produits Firebase qu'on souhaite utiliser
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+// Configuration Firebase de l'application web
 const firebaseConfig = {
   apiKey: "AIzaSyAD43n71TDR55V_QoH9Z-aW8iudRuai2dU",
   authDomain: "flarmelexandra.firebaseapp.com",
@@ -15,7 +15,7 @@ const firebaseConfig = {
   appId: "1:195811032571:web:51a8a8ab27958a7df19f5e"
 };
 
-// Initialize Firebase
+// INitialisation de Firebase
 const app = initializeApp(firebaseConfig);
 
 console.log("Connected to firebase :=)")

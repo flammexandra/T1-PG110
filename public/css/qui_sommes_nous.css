@@ -39,7 +39,6 @@ position: relative;
 margin: 0;
 padding: 0;
 height: 100%;
-/*background-image: url('../../../Téléchargements/andra-c-taylor-jr-_L5MGd0w1FQ-unsplash\(1\).jpg');*/
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -59,12 +58,7 @@ position: relative;
 justify-content: center;
 }
 
-/*
-.navbar-toggler-icon{
-filter: invert(100%);
--webkit-filter: invert(100%);
-}
-*/
+
 
 /* barre de navigation */
 
@@ -137,12 +131,10 @@ color:black;
 }
 
 
-
 /* Section */
 .container{
 margin-bottom: 2rem;
 }
-
 
 
 /* the footer */
